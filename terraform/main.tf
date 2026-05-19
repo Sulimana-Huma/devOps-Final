@@ -1,14 +1,14 @@
 provider "aws" {
-  region = "us-east-1"
+  region = "us-east-2"
 }
 
 resource "aws_instance" "devops_server" {
 
-  ami           = "ami-0c7217cdde317cfec"
+  ami           = "ami-0fb653ca2d3203ac1"
 
-  instance_type = "t2.micro"
+  instance_type = "t3.small"
 
-  key_name = "YOUR_KEY_NAME"
+  key_name = "devops-key"
 
   tags = {
     Name = "DevOpsLabFinal"
